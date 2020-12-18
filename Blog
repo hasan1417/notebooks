@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+            "hd hd hd hd hd hd"
+            "mn mn mn mn sd sd"
+            "ft ft ft ft ft ft";
+            gap: 20px;
+            padding: 10px;
+        }
+        
+        .header {
+            grid-area: hd;
+ 
+        }
+        img{
+ 
+            width: 25px;
+ 
+            height: 25px;
+ 
+            position:absolute;
+ 
+            right:40px;
+ 
+            top: 30px;
+ 
+        }
+ 
+        div > p > u{
+ 
+            position:absolute;
+ 
+            left:40px;
+ 
+            top: 30px;
+ 
+            color: gray;
+ 
+            font-size: 14px;
+ 
+        }
+        .main{
+            grid-area: mn;
+            height: 500px;
+            border: 1px solid black;
+            text-align: left;
+        }
+        .side{
+            grid-area: sd;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 360px;
+            border: 1px solid black;
+            text-align: left;
+            justify-content: space-between;
+        }
+        .about{
+            background-color: lightgrey;
+        }
+        .archive{
+        }
+ 
+        .main .side .footer p > u{
+            color: blue
+        }
+        .newPost{
+            border-radius: 25px;
+            border: 2px solid lightblue;
+            padding: 20px; 
+        }
+        .oldPost{
+            border-radius: 25px;
+            border: 2px solid grey;
+            padding: 20px; 
+        }
+        .footer{
+            grid-area: ft;
+            height: 300px;
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+         
+    </style>
+</head>
+<html>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1 style="text-align: center;"><u>My Blog</u></h1>
+                <img src="search.jpg">
+                <div><p><u>subscribe</u></p></div>
+            </div>
+            <div class="main">
+                <div class="title"></div>
+                <div class="dateAuthor"></div>
+                <p style=" border-bottom: lightgray;"></p>
+                <p></p>
+                <p style="border: 1px solid;"></p>
+                <p></p>
+                <h1></h1>
+                <p></p>
+                <h2></h2>
+                <p></p>
+                <code></code>
+                <p></p>
+                <h2></h2>
+                <p></p>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <p></p>
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+                <p></p>
+                <div class="oldPost">Older Post</div>
+                <div class="newPost">Newer Post</div>
+            </div>
+            <div class="side">
+                <div class="about">heydddddf dfddnf sfohf nfnfn  bf yfds f8y8 gf9i </div>
+                <div class="archive">hey</div>
+                <div class="elsewhere">lol</div>
+            </div>
+            <div class="footer">
+                <p>HEEEY</p>
+            </div>
+        </div>
+    </body>
+</html>
+ 
